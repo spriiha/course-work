@@ -3,8 +3,8 @@ library(tidyverse)
 set.seed(42)
 growth <- tibble(
   treatment = rep(c("Control", "Antibiotic"), each = 15),
-  OD600 = c(rnorm(15, mean = 0.8, sd = 0.05),
-            rnorm(15, mean = 0.7, sd = 0.05))
+  OD600 = c(rnorm(15, mean = 0.5, sd = 0.05),
+            rnorm(15, mean = 0.9, sd = 0.05))
 )
 growth |> head()
 
